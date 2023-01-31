@@ -3,6 +3,7 @@
 }
 body{
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 .nav{
     box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
@@ -44,4 +45,43 @@ object-fit: cover;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     margin: 0;
+}
+.
+.cards-section {
+    width: 175px;
+    font-size: 12px;
+    flex: 0 0 auto;       
+    display: flex;          
+    flex-direction: column;
+    position: relative;
+
+
+}
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    justify-content: center;
+}
+.card--stats{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.card--text--bold{
+    font-weight: 600;
+    font-size: 14px;
+  
+}
+.card.title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-text{
+    padding: 0;
+    margin-top: auto;
+}
+.card--star {
+    height: 14px;
 }

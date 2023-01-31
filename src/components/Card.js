@@ -1,20 +1,23 @@
 import React from 'react'
+
 import starLogo from '../images/Star 1.png'
 export default function Card(props){
     return (
-        <div>
-          <img src={`../images/${props.item.coverImg}`}  className="card--image" alt='img' />
-            <div>
-                <img src={starLogo} alt='' />
-                <span>{props.item.stats.rating}</span>
-                <span>{props.item.stats.reviewCount}</span>
-                <span>{props.item.location}</span>
+       
+            <div className='card-section'>
+          <img src={`../images/${props.cards.coverImg}`}  className="card--image" alt='img' />
+            <div className="card--stats">
+                <img src={starLogo} className='card--star' alt='' />
+                <span>{props.cards.stats.rating}</span>
+                <span>({props.cards.stats.reviewCount}) .</span>
+                <span>{props.cards.location}</span>
             </div>
-            <p>{props.item.title}</p>
-            <p>
-                <span>From ${props.item.price} </span>
+            <p className='card--title'>{props.cards.title}</p>
+            <p className='card-text'>
+                <span className='card--text--bold'>From ${props.cards.price} </span>
                 / person
             </p>
-        </div>
+            </div>
+     
     )
 }

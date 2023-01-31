@@ -4,12 +4,11 @@ import Main from '../components/Main'
 import Card from '../components/Card'
 import data  from '../components/data'
 export default function App(){
-    const card = data.map((item) => {
+    const card = data.map((cards) => {
         return (
-
             <Card 
-            key={item.id}
-            item={item}
+            key={cards.id}
+            cards={cards}
             />
            
         )
@@ -18,7 +17,9 @@ export default function App(){
         <div>
             <Nav />
             <Main/>
-            {card}
+            <section className="cards-list">
+                {card}
+            </section>
         </div>
     )
 }
