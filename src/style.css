@@ -5,6 +5,7 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+
 .nav{
     box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
     padding: 20px 36px;
@@ -46,7 +47,6 @@ object-fit: cover;
     font-weight: 300;
     margin: 0;
 }
-.
 .cards-section {
     width: 175px;
     font-size: 12px;
@@ -54,20 +54,19 @@ object-fit: cover;
     display: flex;          
     flex-direction: column;
     position: relative;
-
-
 }
 .cards-list {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 20px;
-    overflow-x: auto;
+    align-items: center;
     justify-content: center;
 }
 .card--stats{
     display: flex;
     align-items: center;
     gap: 2px;
+    font-size: 12px;
 }
 .card--text--bold{
     font-weight: 600;
@@ -77,11 +76,36 @@ object-fit: cover;
 .card.title{
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 12px;
 }
 .card-text{
     padding: 0;
     margin-top: auto;
+    font-size: 12px;
 }
 .card--star {
     height: 14px;
+}
+.card--image{
+    width: 175px;
+    height: 235px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.card-badge{
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 6px;
+    color: #222222;
+    background-color: white;
+    padding: 4px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 10px;
+    cursor: pointer;
+}
+.card-badge:hover{
+    background: #222222;
+    color: white;
 }
